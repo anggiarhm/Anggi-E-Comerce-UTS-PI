@@ -1,0 +1,1122 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.anggi-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffefa;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.anggi-logo {
+    flex: 1; 
+}
+
+.anggi-logo h1 {
+    font-size: 24px;
+    color: #132fba;
+    margin: 0;
+    padding: 0;
+}
+
+.anggi-menu {
+    display: flex;
+    justify-content: center; 
+    flex: 2;
+}
+
+.anggi-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #132fba;
+    transition: color 0.3s ease;
+}
+
+.anggi-menu a:hover, .anggi-icons a:hover {
+    color: #799cf0;
+    text-decoration: underline;
+}
+
+.anggi-icons {
+    display: flex;
+    justify-content: flex-end; 
+    flex: 1; 
+}
+
+.anggi-icons a {
+    margin: 0 15px; 
+    font-size: 20px;
+    color: #132fba;
+    transition: transform 0.3s ease;
+}
+
+.anggi-icons a:hover {
+    transform: scale(1.2);
+}
+
+.anggi-menu {
+    display: flex;
+}
+
+.anggi-menu-icon {
+    display: none;
+}
+
+.anggi-full-screen-image {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.anggi-full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(4px);
+}
+
+.anggi-centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #132fba;
+}
+
+.anggi-centered-text h2 {
+    font-size: 28px;
+}
+
+.anggi-centered-text h1 {
+    font-size: 50px;
+}
+
+.anggi-centered-text p {
+    font-size: 18px;
+}
+
+.anggi-centered-text .anggi-shop-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #132fba;
+    color: #fffefa;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.anggi-centered-text .anggi-shop-now-button:hover {
+    background-color: #0f1a7a;
+}
+
+.anggi-footer {
+    background-color: #132fba;
+    color: #fff6d2;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.anggi-footer-section {
+    padding: 0 15px;
+}
+
+.anggi-footer-section h1, .anggi-footer-section h3 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.anggi-footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.anggi-footer a {
+    color: #fffefa;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.anggi-footer a:hover {
+    text-decoration: underline;
+}
+
+.anggi-search-input {
+    font-size: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 2px solid #132fba;
+    border-radius: 5px;
+    outline: none;
+    display: none;
+    float: left;
+}
+
+.anggi-shop-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #132fba;
+}
+
+.anggi-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.anggi-product-item {
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+    background-color: #fffefa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anggi-product-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.anggi-product-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.anggi-product-item p {
+    font-size: 14px;
+}
+
+.anggi-buy-button {
+    padding: 10px 20px;
+    background-color: #132fba;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.anggi-buy-button:hover {
+    background-color: #0f1a7a;
+}
+
+.anggi-collection-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #132fba;
+}
+
+.anggi-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.anggi-collection-item {
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.anggi-collection-item img {
+    width: 100%;
+    height: auto;
+}
+
+.anggi-buy-button {
+    display: block;
+    background-color: #132fba;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.anggi-buy-button:hover {
+    background-color: #0f1a7a;
+}
+
+.anggi-pages-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #132fba;
+}
+
+.anggi-pages-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.anggi-page {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    background-color: #fffefa;
+}
+
+.anggi-page h3 {
+    color: #132fba;
+    font-size: 22px;
+}
+
+.anggi-page p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.anggi-link-button {
+    display: block;
+    background-color: #132fba;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.anggi-link-button:hover {
+    background-color: #0f1a7a;
+}
+
+.anggi-blog-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #132fba;
+}
+
+.anggi-blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.anggi-blog-post {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    background-color: #fffefa;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 450px;
+}
+
+.anggi-blog-post img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+
+.anggi-blog-post h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.anggi-read-more-button {
+    background-color: #132fba;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.anggi-read-more-button:hover {
+    background-color: #0f1a7a;
+}
+
+.anggi-about-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #132fba;
+}
+
+.anggi-about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.anggi-about-article {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fffefa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.anggi-about-article img {
+    width: 100%;
+    height: auto;
+}
+
+.anggi-about-text h3 {
+    color: #132fba;
+    font-size: 22px;
+}
+
+.anggi-about-text p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.anggi-contact-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #132fba;
+}
+
+.anggi-contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.anggi-contact-form form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.anggi-contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #132fba;
+}
+
+.anggi-contact-form input,
+.anggi-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.anggi-submit-button {
+    background-color: #132fba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.anggi-submit-button:hover {
+    background-color: #0f1a7a;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0; 
+}
+
+.anggi-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.anggi-profile-header {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.anggi-profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.anggi-profile-info, .anggi-profile-links {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.anggi-profile-links a {
+    display: block;
+    color: #132fba;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.anggi-profile-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .anggi-profile {
+        padding: 15px;
+    }
+
+    .anggi-profile-header {
+        padding: 15px;
+    }
+
+    .anggi-profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .anggi-profile-info, .anggi-profile-links {
+        padding: 10px;
+    }
+
+    .anggi-profile-links a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .anggi-navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: 100%; 
+    }
+
+    .anggi-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .anggi-logo h1 {
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 18px;
+    }
+
+    .anggi-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .anggi-menu.anggi-menu-active {
+        display: flex;
+        gap: 5px;
+    }
+
+    .anggi-menu a {
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+        text-align: left;
+        width: 100%;
+    }
+
+    .anggi-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .anggi-icons a {
+        font-size: 20px;
+    }
+
+    .anggi-menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .anggi-logo, .anggi-icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .anggi-full-screen-image {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .anggi-full-screen-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: blur(2px);
+    }
+
+    .anggi-centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #132fba;
+        padding: 0 20px;
+        width: 90%;
+    }
+
+    .anggi-centered-text h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-centered-text h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-centered-text p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .anggi-centered-text .anggi-shop-now-button {
+        padding: 12px 25px;
+        font-size: 14px;
+        background-color: #132fba;
+        color: #fffefa;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    .anggi-centered-text .anggi-shop-now-button:hover {
+        background-color: #0f1a7a;
+    }  
+}
+
+@media only screen and (max-width: 480px) {
+    .anggi-footer {
+        background-color: #132fba;
+        color: #fff6d2;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .anggi-footer-section {
+        width: 48%;
+        box-sizing: border-box; 
+        margin-bottom: 15px; 
+        padding: 10px;
+    }
+
+    .anggi-footer-section h1, .anggi-footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-footer-section p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .anggi-footer a {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+
+    .anggi-footer-section:nth-child(2), .anggi-footer-section:nth-child(3), .anggi-footer-section:nth-child(4), .anggi-footer-section:nth-child(5) {
+        margin-left: 5%; 
+    }
+
+    .anggi-footer-section:nth-child(2), 
+    .anggi-footer-section:nth-child(3),
+    .anggi-footer-section:nth-child(4), 
+    .anggi-footer-section:nth-child(5) {
+        margin-top: 15px; 
+    }
+
+    .anggi-footer-section:nth-child(odd) {
+        margin-right: 5%;
+    }
+
+    .anggi-footer-section:nth-child(5) {
+        margin-right: 0; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .anggi-about-header {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .anggi-about-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-about-header p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .anggi-about-content {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .anggi-about-article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .anggi-about-article img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .anggi-about-text {
+        text-align: left; 
+        padding: 0 10px;
+    }
+
+    .anggi-about-text h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .anggi-about-text p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styling untuk Header Blog */
+    .anggi-blog-header {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .anggi-blog-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-blog-header p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    /* Styling untuk Konten Blog */
+    .anggi-blog-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* Styling untuk Setiap Post Blog */
+    .anggi-blog-post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 380px;  /* Membatasi tinggi card agar lebih sesuai */
+        justify-content: space-between;  /* Agar teks dan tombol tersusun dengan baik */
+    }
+
+    /* Gambar dalam Setiap Post */
+    .anggi-blog-post img {
+        width: 100%;  /* Membuat gambar mengambil lebar penuh dari card */
+        height: 150px;  /* Menyesuaikan tinggi gambar agar pas dengan card */
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    /* Judul dalam Setiap Post */
+    .anggi-blog-post h3 {
+        font-size: 16px;  /* Mengurangi ukuran font judul */
+        margin-bottom: 10px;
+    }
+
+    /* Deskripsi dalam Setiap Post */
+    .anggi-blog-post p {
+        font-size: 12px;  /* Mengurangi ukuran font deskripsi */
+        line-height: 1.4;
+        margin-bottom: 15px;
+        color: #555;  /* Menyesuaikan warna teks agar lebih soft */
+    }
+    
+    /* Tombol 'Read More' */
+    .anggi-read-more-button {
+        padding: 8px 15px;  /* Mengurangi padding tombol */
+        font-size: 14px;
+        background-color: #132fba;
+        color: #fffefa;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        margin-top: auto;  /* Menjaga tombol tetap di bawah card */
+    }
+
+    .anggi-read-more-button:hover {
+        background-color: #0f1a7a;
+    }
+
+    /* Styling untuk Header Halaman Tentang */
+    .anggi-about-header {
+        text-align: center;
+        padding: 20px 10px;
+        background-color: #f4f4f9;
+        color: #132fba;
+    }
+
+    .anggi-about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .anggi-collection-header {
+        text-align: center; 
+        padding: 20px 10px;
+    }
+
+    .anggi-collection-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-collection-header p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .anggi-collection {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        padding: 10px;
+        gap: 20px; 
+    }
+
+    .anggi-collection-item {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center; 
+        width: 90%; 
+        max-width: 300px; 
+    }
+
+    .anggi-collection-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-collection-item h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-collection-item p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .anggi-buy-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #132fba;
+        color: #fffefa;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .anggi-buy-button:hover {
+        background-color: #0f1a7a;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .anggi-contact-header {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .anggi-contact-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-contact-header p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .anggi-contact-form {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto; 
+    }
+
+    .anggi-contact-form label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .anggi-contact-form input,
+    .anggi-contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .anggi-contact-form textarea {
+        resize: vertical;
+    }
+
+    .anggi-submit-button {
+        padding: 12px 20px;
+        font-size: 14px;
+        background-color: #132fba;
+        color: #fffefa;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .anggi-submit-button:hover {
+        background-color: #0f1a7a;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .anggi-pages-header {
+        text-align: center; 
+        padding: 20px 10px;
+    }
+
+    .anggi-pages-header h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-pages-header p {
+        font-size: 16px;
+    }
+
+    .anggi-pages-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .anggi-page {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .anggi-page h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .anggi-page p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .anggi-link-button {
+        font-size: 14px;
+        background-color: #132fba;
+        color: #fffefa;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .anggi-link-button:hover {
+        background-color: #0f1a7a;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Header */
+    .anggi-shop-header {
+        text-align: center;
+        padding: 8px 4px;
+    }
+
+    .anggi-shop-header h2 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .anggi-shop-header p {
+        font-size: 12px;
+    }
+
+    .anggi-products {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        padding: 4px;
+        justify-items: center; 
+    }
+
+    .anggi-product-item {
+        background-color: #f9f9f9;
+        padding: 6px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 260px; 
+        width: 90%; 
+        max-width: 320px; 
+    }
+
+    .anggi-product-item img {
+        width: 100%;
+        height: auto; 
+        max-height: 160px; 
+        object-fit: contain; 
+        border-radius: 4px;
+    }
+
+    .anggi-product-item h3 {
+        font-size: 12px;
+        margin: 4px 0;
+        word-wrap: break-word;
+    }
+
+    .anggi-product-item p {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .anggi-buy-button {
+        font-size: 10px;
+        background-color: #132fba;
+        color: #fffefa;
+        padding: 6px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: auto;
+    }
+
+    .anggi-buy-button:hover {
+        background-color: #0f1a7a;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
